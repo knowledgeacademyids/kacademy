@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import django_heroku
 import os
 
 
@@ -25,7 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!huo+@hgy17yf86%x3v%b4=n&nyrfa1ph&8m13e@-f4-4j15v3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# FALSE
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -126,5 +128,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# heroku steps
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# Activate Django-Heroku.
+django_heroku.settings(locals())
 
