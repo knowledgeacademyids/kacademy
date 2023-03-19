@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>kAcademy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  {% load static %}
+  <script src="{% static 'js/script.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+   <h1 style="color:black;"> {{STATIC_URL }}</h1>
+	<nav class="navbar  navbar-fixed-top shadow-lg">
+	  <div class="container">
+
+		<div class="navbar-header">
+		  <button type="button" style="background-color: white;color:black" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar" style="background-color: black;"></span>
+			<span class="icon-bar" style="background-color: black;"></span>
+			<span class="icon-bar" style="background-color: black;"></span>                        
+		  </button>
+		  <a class="navbar-brand" href="#myPage">kAcademy</a>
+		</div>
+  
+	<div class="navbar-collapse"  id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#home">HOME</a></li>
+			<li><a href="#service">SERVICE</a></li>
+			<li><a href="#tools">TOOLS</a></li>
+            <li><a href="#modules">TECHNICAL MODULES</a></li>
+			<li><a href="#contact" >JOIN TEAM</a></li>
+			<li><a href="" data-toggle="modal" data-target="#myModal" >LOG IN<span class="glyphicon glyphicon-log-in"></span></a></li>
+		  </ul>
+		</div>
+	  </div>
+
+
+     
+
+	</nav>
+
+<div id="home" class="jumbotron text-center" style="padding:18%" >
+  <h1>k Academy</h1> 
+  <p>LEARN. DEVELOP. SUCCEED.</p>
+  <h6>ROUGH SKETCH TO FINALIZE THE REQUIREMENTS OF v1.0.0.0</h6>
+</div>
+
+<!-- Container (About Section) -->
+<div id="service" class="container-fluid">
+  <div class="row" style="text-align:justify">
+    <div class="col-sm-12">
+      <h2>APPLICATION SERVICE</h2>
+      <h6>Role and Functionality</h6><br>
+      
+      <div class="row">
+
+       <div class="col-md-4">
+        <h4>Technical Team (Level - 0)</h4> 
+        <ol>
+            <li>Access to all levels</li>
+            <li>Development/Support/Maintenance</li>
+         </ol>
+       </div>
+        
+       <div class="col-md-4">
+         <h4>Admin/Unit Head (Level - 1)</h4> 
+         <ol>
+            <li>Manage the all sub levels</li>
+            <li>Regular High Level Reports</li>
+         </ol>
+       </div>
+       
+       <div class="col-md-4">
+        <h4>Sub Admin/Tower Lead (Level - 2)</h4> 
+        <ol>
+            <li>Manage the sub level</li>
+            <li>Regular sub Level Reporting</li>
+            <li>Team Targets</li>
+         </ol>        
+      </div>
+     </div>
+     
+     <div class="row">
+      <div class="col-md-4">
+        <h4>Manager/Team Lead (Level - 3)</h4> 
+        <ol>
+            <li>Manage the learner</li>
+            <li>Regular sub Level Reporting</li>
+            <li>Manage Course Groups/Approvals</li>
+            <li>Manage Courses/Approvals</li>
+            <li>Team Goal Setting</li>
+            <li>Approve Learnings</li>
+         </ol> 
+      </div>
+      
+      <div class="col-md-4">
+        <h4>Learner/Team Members (Level - 4)</h4> 
+        <ol>
+            <li>Complete Course</li>
+            <li>Recommend courses</li>
+            <li>Submit Project work</li>
+         </ol> 
+      </div>
+
+
+      </div>  
+
+
+   
+  </div>
+  
+</div>
+
+<div  id="tools" class="container-fluid bg-grey" >
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8"  style="text-align:justify">
+      <h2 ALIGN="CENTER">TOOLS</h2>
+      <h6>Technical Skills and Setup</h6>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Front End</h4> 
+          <ol>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>jQuery/Ajax</li>
+              <li>React/Angular/bootstrap/semantic UI (optional)</li>
+           </ol> 
+        </div>
+        
+        <div class="col-md-4">
+          <h4>Back End</h4> 
+          <ol>
+              <li>Python - Flask/Django</li>
+              <li>Java - Servlets/Hibernate/Spring</li>
+              <li>JS - Node</li>
+           </ol> 
+        </div>
+  
+        <div class="col-md-4">
+            <h4>Database</h4> 
+            <ol>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+             </ol> 
+        </div>     
+
+      </div>
+ 
+      <div class="row"> 
+        <div class="col-md-4">
+          <h4>Editor</h4> 
+          <ol>
+              <li>Notepad++</li>
+              <li>VS Code</li>
+           </ol> 
+        </div>
+        
+        <div class="col-md-4">
+          <h4>Collabration</h4> 
+          <ol>
+              <li>Git</li>
+              <li>Github</li>
+           </ol> 
+        </div>
+  
+        <div class="col-md-4">
+            <h4>Deployment</h4> 
+            <ol>
+                <li>TBD</li>
+             </ol> 
+        </div>     
+
+      </div>
+
+<div class="row">
+      
+    <div class="col-md-4">
+        <h4>Additional</h4> 
+        <ol>
+            <li>Photoshop</li>
+            <li>Putty</li>
+            <li>SQL Manager</li>
+            <li>Tableau</li>
+         </ol> 
+    </div>  
+</div>
+
+
+     </div>
+
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="modules" class="container-fluid bg-white">
+    <h2>TECHNICAL MODULES</h2>
+    <p>MICRO SERVICE AND TEAMS</p>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> xyz</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +9999999999</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> xyz.com</p>
+      </div>
+      <div class="col-sm-7 slideanim">
+  
+      </div>
+    </div>
+  </div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT US</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> xyz</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +9999999999</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> xyz.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Developed by Inderdeep Singh  </p>
+</footer>
+
+
+<!-- login form -->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal" style="z-index:9999;">
+    <div class="modal-dialog modal-md" >
+      <div class="modal-content" style="background-color:opacity:1">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">LOGIN </h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body"  >
+		
+			<form action="" align="left">
+			  <div class="form-group">
+				<label for="email">Email Address</label>
+				<input type="email" class="form-control" id="email" placeholder="email">
+			  </div>
+			  <div class="form-group">
+				<label for="pwd">Password</label>
+				<input type="password" class="form-control" id="pwd" placeholder="password">
+			  </div>
+			  <div class="form-group form-check">
+				<label class="form-check-label">
+				  <input class="form-check-input" type="checkbox"> Remember me
+				</label>
+				<label class="form-check-label" style="float:right">
+					<a class="form-check-input" > Forget Password ?</a>
+				</label>
+			  </div>
+			    <button align="center" class="btn btn-danger" type="submit">Login</button>
+			  
+			</form>
+		</div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+		  </div>
+		</div>
+	</div>
+	
+  </body>
+</html>
